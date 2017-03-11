@@ -1,0 +1,47 @@
+.landingPage {
+    background: url(../images/background1Desktop.jpg) no-repeat center center fixed;
+    background-size: cover;
+    box-shadow: inset 0px 20px 14px -14px rgba(19, 19, 19, 0.6), inset 0px -20px 14px -14px rgba(19, 19, 19, 0.6);
+    // filter: grayscale(20%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    @media #{$tablet} {
+        // padding-bottom: 20%;
+    }
+    @media #{$desktop} {
+        // padding-bottom: 5%;
+    }
+
+    &__content {
+        text-align: center;
+    }
+    &__paragraph {
+        text-shadow: 0px 3px 3px rgba(19, 19, 19, 0.6);
+        font-size: 30px;
+        color: #ffffff;
+        @media #{$tablet} {
+            font-size: 40px;
+        }
+    }
+    &__button {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        display: inline-block;
+        text-align:center;
+        padding: 20px 40px;
+        color: white;
+        transition: 300ms ease-in-out;
+        box-shadow: 0px 4px 20px rgba(19, 19, 19, 0.6);
+        font-size: 22px;
+        margin: 40px 2.6%;
+        background-color: $CTAbutton-color;
+        border-bottom: 3px solid darken($CTAbutton-color, 10%);
+        border-radius: 5px;
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0px 2px 20px rgba(19, 19, 19, 0.6);
+        }
+    }
+
+}

@@ -1,0 +1,142 @@
+.header {
+    // overflow: hidden;
+    color: $header-textColor;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media #{$tablet} {
+        align-items: center;
+    }
+    &__logo {
+        order: 0;
+        max-width: 20%;
+        @media #{$tablet} {
+            margin-left: 8%;
+            max-width: 60px;
+            // flex-basis: 25%;
+        }
+        @media #{$desktop} {
+            margin-left: 0;
+        }
+    }
+    &__logoContact-container {
+        flex-wrap: wrap;
+        align-items: center;
+        display: flex;
+        flex-basis: 54%;
+        order: 1;
+        justify-content: center;
+        @media #{$tablet} {
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            flex-grow: 1;
+            margin-right: 8%;
+        }
+        @media #{$desktop} {
+            flex-basis: 50%;
+            margin-right: 0;
+        }
+    }
+    &__title {
+        font-size: 35px;
+        flex-basis: 60%;
+        @media #{$tablet} {
+            flex-basis: 40%;
+        }
+        &-green {
+            color: $logo-color;
+        }
+    }
+    &__hamburger {
+        color: $logo-color;
+        display: flex;
+        align-items: center;
+        flex-basis: 20%;
+        justify-content: space-around;
+        order: 2;
+        font-size: 50px;
+        @media #{$tablet} {
+            display: none;
+        }
+    }
+}
+
+.headerContact {
+    display: flex;
+    align-items:center;
+    @media #{$tablet} {
+        flex-basis: 60%;
+        padding-top: 3px;
+        justify-content: flex-end;
+    }
+    @media #{$desktop} {
+        justify-content: center;
+    }
+    &__phoneIcon {
+        display: none;
+        max-height: 20px;
+        @media #{$tablet} {
+            max-height: 30px;
+            display: block;
+        }
+    }
+    &__number {
+        letter-spacing: 3.9px;
+        @media #{$tablet} {
+            letter-spacing: normal;
+            font-size: 25px;
+            // font-weight: 300;
+        }
+    }
+}
+
+.mainNavigation {
+    flex-basis: 100%;
+    order: 3;
+    display: none;
+    @media #{$tablet} {
+        flex-grow: 1;
+        order: 2;
+        display: flex;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    @media #{$desktop} {
+        flex-basis: 40%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    &__list {
+        font-size: 25px;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        justify-content: space-between;;
+        text-align: center;
+        @media #{$tablet} {
+            flex-direction: row;
+        }
+    }
+    &__element {
+        letter-spacing: 2px;
+        line-height: 50px;
+        // font-weight: 300;
+        transition: 0.5s all;
+        @media #{$tablet} {
+            flex-direction: row;
+            &:hover {
+                color: $nav-textHighlight-color;
+            }
+        }
+        &--active {
+            background-color: $nav-textHighlight-color;
+            color: #fff;
+        }
+    }
+    &__dropdown ul {
+        display: none;
+        & li {
+            font-weight: 300;
+        }
+    }
+}

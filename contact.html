@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#A9CE18">
+        <title>rentGarden</title>
+        <script src="https://use.fontawesome.com/7684f00eaf.js"></script>
+        <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+
+        <header class="header wrapper">
+            <div class="header__logo">
+                <a href="index.html"><img src="images/logo2.png" alt="rentGarden logo © Anbileru Adaleru"></a>
+                <!-- Lawn Mower by Anbileru Adaleru from the Noun Project -->
+            </div>
+            <div class="header__logoContact-container">
+                <h1 class="header__title">
+                    <a href="index.html">rent<span class="header__title-green">Garden</span></a>
+                </h1>
+                <section class="headerContact">
+                    <img src="images/phone.svg" class="headerContact__phoneIcon" alt="phone icon">
+                    <a href="tel:+48666666666" class="headerContact__number">+48&nbsp;666&nbsp;666&nbsp;666</a>
+                </section>
+            </div>
+            <div class="header__hamburger">
+                <a href="#">☰</a>
+            </div>
+            <nav class="mainNavigation">
+                <ul class="mainNavigation__list">
+                    <li class="mainNavigation__element"><a href="#">O&nbsp;firmie</a></li>
+                    <li class="mainNavigation__element mainNavigation__dropdown"><a href="#">Oferta</a>
+                        <ul>
+                            <li><a href="#">Wynajem sprzętu</a></li>
+                            <li><a href="#">Wynajem samochodów</a></li>
+                        </ul>
+                    </li>
+                    <li class="mainNavigation__element"><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="contact">
+            <div class="wrapper contact__content">
+                <div class="contact__info">
+                    <p class="contact__paragraph">Tomasz Daroch</p>
+                    <p class="contact__paragraph">tel. +48&nbsp;666&nbsp;666&nbsp;666</p>
+                    <p class="contact__paragraph">e-mail: kontakt@rentgarden.pl</p>
+                    <form class="contact__form" action="form.php" method="POST">
+                        <h2 class="form__title">Formularz kontaktowy</h2>
+                        <input placeholder="Imię i nazwisko" type="text" name="name" />
+                        <input placeholder="Numer telefonu" type="tl" name="phone" />
+                        <input placeholder="E-mail" type="email" name="email" />
+                        <input placeholder="Temat wiadomości" type="text" name="topic" />
+                        <textarea placeholder="Treść wiadomości" name="message"></textarea>
+                        <button class="form__button" type="submit">Wyślij</button>
+                    </form>
+                </div>
+                <div class="contact__map">
+                    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.3277820848693!2d17.027394215783165!3d51.120861679573544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9e653cf7599%3A0x8f13c5e0261f7405!2sKaszubska+9%2C+50-214+Wroc%C5%82aw!5e0!3m2!1spl!2spl!4v1488928574813" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="wrapper footer__content">
+                <section class="footer__social-media">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </section>
+                <section class="footer__copyright-texts">Copyright © rentGarden 2017. All rights reserved.</section>
+            </div>
+        </footer>
+    </body>
+</html>

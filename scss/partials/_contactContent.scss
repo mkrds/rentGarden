@@ -1,0 +1,96 @@
+.contact {
+    background: #F9F9F9;
+    box-shadow: inset 0px 15px 14px -14px rgba(19, 19, 19, 0.2), inset 0px -15px 14px -14px rgba(19, 19, 19, 0.2);
+    // filter: grayscale(20%);
+    display: flex;
+    align-items: center;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+    }
+    &__map {
+        flex-basis: 60%;
+        overflow:hidden;
+        padding-bottom:55%;
+        position:relative;
+        height:0;
+        & iframe {
+            left:0;
+            top:0;
+            height:100%;
+            width:100%;
+            position:absolute;
+        }
+    }
+    &__info {
+        flex-basis: 40%;
+    }
+    &__paragraph {
+        font-size: 20px;
+    }
+    &__form {
+        padding-right: 25px;
+        &  input, textarea {
+            width: 100%;
+            border: 1px solid #ccc;
+            background: #FFF;
+            margin: 0 0 10px;
+            padding: 10px;
+            &:hover {
+                transition: border-color 0.3s ease-in-out;
+                border: 1px solid #aaa;
+            }
+            &:focus {
+                outline: 0;
+                border: 1px solid #aaa;
+                box-shadow: 0 0 6px $sendButton-color;
+            }
+        }
+        & textarea {
+            height: 100px;
+            max-width: 100%;
+            resize: none;
+        }
+        & button {
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            background: $sendButton-color;
+            color: #FFF;
+            margin: 0 0 5px;
+            padding: 10px;
+            font-size: 20px;
+            transition: background-color 0.3s ease-in-out;
+            &:hover {
+                background-color: darken($CTAbutton-color, 5%);
+                transition: background-color 0.3s ease-in-out;
+            }
+            &:active {
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+}
+
+.form__title {
+  font-size: 20px;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}

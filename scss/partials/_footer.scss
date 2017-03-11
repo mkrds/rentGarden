@@ -1,0 +1,40 @@
+.footer {
+    box-shadow: 0px 20px 14px -14px rgba(19, 19, 19, 0.6);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    &__social-media {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        @media #{$tablet} {
+            width: 20%;
+        }
+    }
+    &__copyright-texts {
+        text-align: center;
+        width: 100%;
+        @media #{$tablet} {
+            text-align: right;
+            width: 80%;
+        }
+    }
+}
+.fa-instagram, .fa-facebook, .fa-twitter {
+    color: $header-textColor;
+    font-size: 30px;
+    transition: 0.5s all;
+    &:hover {
+        color: $nav-textHighlight-color;
+    }
+}
+.footer__copyright-texts {
+    color: $header-textColor;
+    font-size: 14px;
+    line-height: 28px;
+}
